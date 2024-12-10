@@ -1,0 +1,18 @@
+#error_banner .show_banner img{
+    width: 100%;
+}
+#error_banner .show_banner{
+    position: relative;
+}
+#error_banner .show_banner a{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    color: var(--text_white);
+    background: var(--button_and_text);
+    font-size: 24px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transform: scale(1.2);
+    z-index: 999999;
+}

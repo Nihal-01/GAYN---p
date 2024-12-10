@@ -1,0 +1,201 @@
+/*------------------- (1) hadder start ----------------*/
+#hadder{
+    background: var(--Text_and_Background_Color);
+    padding: 14px 0 14px;
+    color: var(--text_white);
+}
+#hadder .contact,
+#hadder .email{
+    padding-left: 10px;
+}
+#hadder a{
+    color: var(--text_white);
+    transition: .5s;
+}
+#hadder a:hover{
+    color: var(--button_and_text);
+}
+#hadder .contact a,
+#hadder .email a,
+#hadder .rg_log a{
+    color: var(--text_white);
+    transition: .5s;
+}
+#hadder .contact a:hover,
+#hadder .email a:hover,
+#hadder .rg_log a:hover{
+    color: var(--button_and_text);
+}
+#hadder .rg_log{
+    text-align: end;
+}
+/*------------------- (1) hadder end ------------------*/
+/*------------------- (2) nav start ----------------*/
+/*------------------- (*) hov.. menu start ------------------*/
+#nav.active{
+    position: fixed;
+    background: var(--text_white);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999;
+    animation-name: fixed-menu;
+    animation-duration: 1s;
+ }
+ @keyframes fixed-menu{
+    from{ top: -100px; }
+    to{ top: 0; }
+ }
+ /*------------------- (*) hov.. menu end ------------------*/
+#nav .logo_nav{
+    margin-top: -5px;
+}
+#nav #N_menu a{
+    color: var(--Text_and_Background_Color);
+}
+#nav #N_menu ul li:hover > a{
+    color: var(--button_and_text);
+}
+#nav button{
+    background: var(--button_and_text);
+    color: var(--text_white);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 20px;
+    transition: .5s;
+}
+#nav button:hover{
+    background-color: var(--Text_and_Background_Color);
+    transform: scale(1.1);
+}
+/*------------------- (2) nav end ------------------*/
+/*------------------- (3) banner start ----------------*/
+/*------------------- home banner start ----------------*/
+#banner .slider_item{
+    width: 100%;
+    height: 600px;
+    color: var(--text_white);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+#banner .slider_item h4{
+    font-size: 40px;
+}
+#banner .slider_item h1{
+    font-size: 52;
+    font-weight: 700;
+}
+#banner .slider_item p{
+    font-size: 14px;
+    padding-top: 25px;
+    margin-bottom: 60px;
+    line-height: 25px;
+}
+#banner .slider_item a{
+    background: var(--Text_and_Background_Color);
+    color: var(--text_white);
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: .5s;
+}
+#banner .slider_item a:hover{
+    background-color: var(--button_and_text);
+}
+#banner .slider_item span{
+    padding-left: 20px;
+}
+#banner .slide_icon{
+    color: var(--text_white);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--text_white);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 47px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    transition: .5s;
+}
+#banner .slide_icon:hover{
+    background: var(--button_and_text);
+}
+#banner .slide_icon.fa-chevron-left{
+    left: 30px;
+}
+#banner .slide_icon.fa-chevron-right{
+    right: 30px;
+}
+/*------------------- home banner end ------------------*/
+/*------------------- all banner start ----------------*/
+#all_banner .banner_item .banner_img img{
+    width: 100%;
+    height: 250px;
+}
+#all_banner .banner_item{
+    position: relative;
+}
+#all_banner .banner_item .banner_heading{
+    color: var(--text_white);
+    position: absolute;
+    top: 20%;
+    left: 44%;
+    z-index: 99;
+}
+#all_banner .banner_item .banner_heading .heading_info h2{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#all_banner .banner_item .banner_heading .heading_info span{
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#all_banner .banner_item .banner_heading .heading_info a{
+    color: var(--text_white);
+    font-size: 14px;
+    transition: .5s;
+}
+#all_banner .banner_item .banner_heading .heading_info a:hover{
+    color: var(--button_and_text);
+}
+/*------------------- all banner end ----------------*/
+/*------------------- (3) banner end ----------------*/
+/*------------------- (4) facility start ----------------*/
+#facility{
+    position: relative;
+    margin-top: -78px;
+    z-index: 99;
+}
+#facility .facility_items{
+    border-left: 1px solid var(--text_fa);
+}
+#facility .facility_items:first-child{
+    border: none;
+}
+#facility .facility_info{
+    background-color: var(--light_background);
+    padding: 10px 0 5px;
+}
+#facility .facility_info h4{
+    font-size: 24px;
+    color: var(--text_color_fh);
+    margin: 7px 0 7px;
+}
+#facility .facility_info a{
+    font-size: 14px;
+    color: var(--text_fa);
+    transition: .5s;
+}
+#facility .facility_info a:hover{
+    color: var(--button_and_text);
+} 
+#facility .facility_info a i{
+    padding-left: 5px;
+}
+/*------------------- (4) facility end ------------------*/

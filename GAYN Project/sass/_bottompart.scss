@@ -1,0 +1,129 @@
+/*------------------- information start ----------------*/
+#information{
+    background: var(--Text_and_Background_Color);
+    padding: 40px 0 50px;
+}
+#information .discription p{
+    font-size: 14px;
+    color: var(--text_white);
+    margin: 25px 0 25px;
+}
+#information .icons a i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    margin-right: 15px;
+    background: var(--text_white);
+    color: var(--Text_and_Background_Color);
+    transition: .5s;
+}
+#information .icons a:hover i{
+    color: var(--text_white);
+    background: var(--button_and_text);
+    transform: scale(1.1);
+}
+/*----------------------------------------*/
+#information .link_info h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text_white);
+    margin-top: 20px;
+    margin-bottom: 31px;
+}
+#information .link_info ul li{
+    color: var(--text_white);
+    margin: 20px 0 20px;
+    transition: .5s;
+}
+#information .link_info ul li:hover{
+    color: var(--button_and_text);
+    transform: scale(1.1);
+}
+/*----------------------------------------*/
+#information .contact_in h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text_white);
+    margin-top: 20px;
+    margin-bottom: 15px;
+} 
+#information .contact_in .info{
+    margin-top: 18px;
+    color: var(--text_white);
+}
+#information .contact_in .info i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: var(--Text_and_Background_Color);
+    background: var(--text_white);
+}
+#information .contact_in .info p{
+    font-size: 14px;
+    color: var(--button_and_text);
+    margin-bottom: 10px;
+}
+#information .contact_in .address i{
+    margin-top: 15px;
+}
+#information .contact_in .cell .cell_num a,
+#information .contact_in .email .email_add a{
+    color: var(--text_white);
+    transition: .5s;
+}
+#information .contact_in .cell .cell_num a:hover,
+#information .contact_in .email .email_add a:hover{
+    color: var(--button_and_text);
+}
+#information .contact_in .cell .cell_num span,
+#information .contact_in .email .email_add span{
+    padding: 0 5px 0;
+}
+/*------------------- information end ------------------*/
+/*------------------- insta-imgs start ----------------*/
+#insta-imgs .slide img{
+    width: 100%;
+}
+#insta-imgs .slide_item{
+    position: relative;
+}
+#insta-imgs .slide_item .overlay{
+    position: absolute;
+	top: 40%;
+    left: 9%;
+    transform: scale(0);
+    transition: .5s;
+    z-index: 99;
+}
+#insta-imgs .slide .slide_item:hover > .overlay{
+    transform: scale(1);
+}
+#insta-imgs .slide_item .overlay a{
+    color: var(--text_color_fh);
+    background: var(--light_background);
+    padding: 9px 16px;
+    justify-content: center;
+    display: flex;
+}
+/*------------------- insta-imgs end ----------------*/
+/*------------------- footer start ----------------*/
+#footer{
+    padding: 16px 0 16px;
+    background: var(--Text_and_Background_Color);
+    color: var(--text_white);
+    font-size: 14px;
+    border-top: 2px solid var(--light_background);
+    border-bottom: 2px solid var(--light_background);
+}
+#footer a{
+    color: var(--button_and_text);
+}
+/*------------------- footer end ------------------*/

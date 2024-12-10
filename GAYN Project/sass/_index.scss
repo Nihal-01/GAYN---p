@@ -1,0 +1,425 @@
+/*------------------- (1) about start ------------------*/
+#about{
+    margin: 50px 0 50px;
+}
+#about .slider_dots{
+    position: absolute;
+    left: 45%;
+    bottom: 5%;
+}
+#about .slider_dots li{
+    line-height: 0;
+    display: inline-block;
+}
+#about .slider_dots li button{
+    background: transparent;
+    border: 1px solid var(--text_color_fh);
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    transition: .5s;
+}
+#about .slider_dots li.slick-active button{
+    background: var(--button_and_text);
+    border: var(--button_and_text);
+}
+#about .about_tital h2{
+    color: var(--Text_and_Background_Color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#about .about_tital p{
+    color: var(--text_color_fh);
+    font-size: 14px;
+}
+#about .about_slider .slide_img img,
+#about .video_img img{
+    width: 100%;
+}
+#about .about_info p{
+    color: var(--text_color_fh);
+    font-size: 14px;
+}
+#about .about_info a{
+    color: var(--text_white);
+    background: var(--Text_and_Background_Color);
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-right: 20px;
+    transition: .5s;
+}
+#about .about_info a:hover{
+    background: var(--button_and_text);
+    transform: scale(1.1);
+}
+/*---/---/---/---*** about page code start ***---/---/---/---*/
+#about .video_img{
+    position: relative;
+}
+#about .video_img .play_button{
+    position: absolute;
+    left: 44%;
+    top: 43%;
+}
+#about .video_img .play_button a i{
+    background: var(--button_and_text);
+    color: var(--text_white);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    transition: .5s;
+}
+#about .video_img .play_button:hover a i{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+}
+/*---/---/---/---*** about page code end ***---/---/---/---*/
+/*------------------- (1) about end ------------------*/
+/*------------------- (3) Our Courses start ----------------*/
+#Our_Courses{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#Our_Courses .teachers_headding{
+    margin-bottom: 60px;
+}
+#Our_Courses .Courses_tital h3{
+    color: var(--Text_and_Background_Color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#Our_Courses .Courses_tital p{
+    color: var(--text_color_fh);
+    font-size: 14px;
+}
+/*---/---/---/---*** slide section start ***---/---/---/---*/
+/*---/---/---/---*** previous & next formet start ***---/---/---/---*/
+#Our_Courses .slide_icon{
+    color: var(--Text_and_Background_Color);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--Text_and_Background_Color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 47px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    transition: .5s;
+}
+#Our_Courses .slide_icon:hover{
+    color: var(--text_white);
+    background: var(--button_and_text);
+    border: none;
+}
+#Our_Courses .slide_icon.fa-chevron-left{
+    left: -55px;
+}
+#Our_Courses .slide_icon.fa-chevron-right{
+    right: -55px;
+}
+/*---/---/---/---*** previous & next formet end ***---/---/---/---*/
+#Our_Courses .Courses_slider_im_if{
+    position: relative;
+    background: var(--light_background);
+    padding-top: 15px;
+    padding-bottom: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    transition: .5s;
+}
+#Our_Courses .Courses_slider_im_if:hover{
+    background: var(--text_white);
+}
+#Our_Courses .Courses_slider_im_if:hover .Course_description h4{
+    color: var(--button_and_text);
+}
+#Our_Courses .Courses_slider_im_if:hover .overlay{
+    transform: scale(1);
+}
+/*---/---/---/---*** img overlay start ***---/---/---/---*/
+#Our_Courses .Courses_slider_im_if .slider_img{
+    position: relative;
+}
+#Our_Courses .Courses_slider_im_if .overlay{
+    position: absolute;
+    background-color: rgba(73, 73, 73, .60);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    bottom: 330px;
+    left: 16px;
+    right: 15px;
+    transform: scale(0);
+    transition: .6s;
+}
+#Our_Courses .Courses_slider_im_if .overlay a{
+    font-size: 20px;
+    padding: 15px 15px;
+    border-radius: 50%;
+    color: var(--text_white);
+    background: var(--button_and_text);
+    text-align: center;
+}
+/*---/---/---/---*** img overlay end ***---/---/---/---*/
+#Our_Courses .Courses_slider_im_if .slider_img img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#Our_Courses .Courses_slider_im_if .nametag_rating .tag_img_name .tag_text{
+    color: var(--text_color_fh);
+    margin-left: 8px;
+    margin-top: 7px;
+}
+#Our_Courses .Courses_slider_im_if .nametag_rating .tag_rating{
+    margin-top: 7px;
+}
+#Our_Courses .Courses_slider_im_if .nametag_rating .tag_rating i{
+    color: var(--button_and_text);
+    font-size: 14px;
+}
+#Our_Courses .Courses_slider_im_if .nametag_rating .tag_rating p{
+    color: var(--text_fa);
+    font-size: 13px;
+}
+#Our_Courses .Courses_slider_im_if .Course_description{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--text_fa);
+}
+#Our_Courses .Courses_slider_im_if .Course_description h4{
+    margin-bottom: 20px;
+    font-size: 19px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#Our_Courses .Courses_slider_im_if .Course_description p{
+    color: var(--text_color_fh);
+    font-size: 14px;
+}
+#Our_Courses .Courses_slider_im_if .Course_info p{
+    margin-top: 15px;
+    color: var(--text_fa);
+    font-size: 13px;
+}
+#Our_Courses .Courses_slider_im_if .Course_info p1{
+    color: var(--text_color_fh);
+    font-size: 13px;
+}
+#Our_Courses .Courses_slider_im_if .enroll_button a{
+    position: absolute;
+    padding: 20px;
+    background: var(--Text_and_Background_Color);
+    color: var(--text_white);
+    border-radius: 10px;
+    transition: .5s;
+    left: 33%;
+    bottom: -6%;
+}
+#Our_Courses .Courses_slider_im_if .enroll_button:hover a{
+    background: var(--button_and_text);
+    transform: scale(1.1);
+}
+/*---/---/---/---*** slide section end ***---/---/---/---*/
+/*------------------- (3) Our Courses end ------------------*/
+/*------------------- (6) teachers start ------------------*/
+#teachers{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#teachers .teachers_headding{
+    margin-bottom: 60px;
+}
+#teachers .teachers_headding h3{
+    color: var(--Text_and_Background_Color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#teachers .teachers_headding p{
+    color: var(--text_color_fh);
+    font-size: 14px;
+}
+/*---/---/---/---*** img saction start ***---/---/---/---*/
+#teachers .slider_im_if{
+    position: relative;
+    padding-left: 15px;
+}
+#teachers .slider_im_if .slider_img img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#teachers .slider_im_if .slider_info h4{
+    color: var(--text_color_fh);
+    font-size: 20px;
+    font-weight: 700;
+}
+#teachers .slider_im_if .slider_info p{
+    color: var(--text_color_fh);
+    padding-bottom: 15px;
+}
+#teachers .slider_im_if .slider_info .spanbar{
+    margin-left: 95px;
+}
+#teachers .slider_im_if .slider_info span{
+    height: 3px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: var(--button_and_text);
+}
+#teachers .slider_im_if .slider_info span1{
+    margin-left: 7px;
+    height: 3px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: var(--button_and_text);
+}
+#teachers .slider_im_if .hove_icon{
+    position: absolute;
+    bottom: 19%;
+    left:27%;
+    transform: scale(0);
+    transition: .5s;
+}
+#teachers .slider_im_if:hover .hove_icon{
+    transform: scale(1);
+}
+#teachers .slider_im_if .hove_icon a i{
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    color: var(--text_white);
+    background: var(--Text_and_Background_Color);
+    transition: .5s;
+}
+#teachers .slider_im_if .hove_icon a i:hover{
+    background: var(--button_and_text);
+    transform: scale(1.1);
+}
+/*---/---/---/---*** img saction end ***---/---/---/---*/
+/*------------------- (6) teachers end ------------------*/
+/*------------------- (7) blog start ------------------*/
+/*---/---/---/---*** blog tital start ***---/---/---/---*/
+#blogs .blog_heading .blog_img img{
+    width: 100%;
+    height: 255px;
+}
+#blogs .blog_heading{
+    position: relative;
+}
+#blogs .blog_heading .tital_text{
+    position: absolute;
+    top: 30px;
+    left: 29%;
+    z-index: 99;
+}
+#blogs .blog_heading .tital_text .blogs_tital{
+    color: var(--text_white);
+}
+#blogs .blog_heading .tital_text .blogs_tital h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+#blogs .blog_heading .tital_text .blogs_tital p{
+    padding-top: 14px;
+    font-size: 14px;
+}
+/*---/---/---/---*** blog tital end ***---/---/---/---*/
+/*---/---/---/---*** top img start ***---/---/---/---*/
+#blogs #discription_img{
+    margin-top: -105px;
+}
+#blogs .blog_img img{
+    width: 100%;
+}
+#blogs #discription_img .top_img{
+    position: relative;
+    margin-bottom: 30px;
+}
+#blogs #discription_img .top_img .img_info{
+    position: absolute;
+    color: var(--text_white);
+    left: 30px;
+    right: 25px;
+    bottom: 20px;
+    z-index: 99;
+}
+#blogs #discription_img .top_img .img_info p{
+    font-size: 20px;
+}
+#blogs #discription_img .top_img .img_info a{
+    font-size: 13px;
+    color: var(--text_white);
+    transition: .5s;
+}
+#blogs #discription_img .top_img .img_info a:hover{
+    color: var(--button_and_text);
+}
+#blogs #discription_img .top_img .hov_icon{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    transform: scale(0);
+    transition: .5s;
+}
+#blogs #discription_img .top_img:hover .hov_icon{
+    transform: scale(1);
+}
+#blogs #discription_img .top_img .hov_icon ul li button{
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 39px;
+    color: var(--text_white);
+    background: var(--Text_and_Background_Color);
+    border: none;
+    border-radius: 50%;
+    transition: .5s;
+}
+#blogs #discription_img .top_img .hov_icon ul li:hover > button{
+    background: var(--button_and_text);
+    transform: scale(1.1);
+}
+/*---/---/---/---*** top img end ***---/---/---/---*/
+#blogs #discription_img .bottom_img{
+    position: relative;
+    margin-bottom: 100px;
+}
+#blogs #discription_img .bottom_img .img_info{
+    position: absolute;
+    color: var(--text_white);
+    left: 10px;
+    bottom: 10px;
+}
+#blogs #discription_img .bottom_img .img_info a{
+    color: var(--text_white);
+    font-size: 13px;
+    transition: .5s;
+}
+#blogs #discription_img .bottom_img .img_info:hover a{
+    color: var(--button_and_text);
+}
+/*------------------- (7) blog end ------------------*/

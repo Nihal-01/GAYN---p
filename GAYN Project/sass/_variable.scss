@@ -1,0 +1,89 @@
+/*
+Necessary Information
+-------------------------
+Template Name: GYAN
+Version: 1.0.0
+Author: GYAN
+/----/-----/-----/-----/-----/----/----/
+****************** Code-menu - S ******************
+   /---- (*) loader Section ----/
+   /---- (*) back to top Section ----/
+****************** Code-menu - E ******************
+*/
+/*--------------- Common Css Start ---------------*/
+body{
+    font-family: 'Arimo', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,
+p,small,span,
+ol,ul{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+i{
+    cursor: pointer;
+}
+/*--------------- Common Css End ---------------*/
+/*------------------- PSD common color start ----------------*/
+:root{
+    --Text_and_Background_Color:#2d3e50;
+    --button_and_text:#fba933;
+    --text_white:#ffffff;
+    --light_background:#f5f5f5;
+    --text_color_fh:#444444;
+    --text_fa:#999999;
+}
+/*------------------- PSD common color end ------------------*/
+/*------------------- (*) loader start ----------------*/
+#preloader{
+    inset: 0;
+    background: var(--light_background);
+    position: fixed;
+    z-index: 9999999999999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#preloader .loader{
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--Text_and_Background_Color);
+    border-radius: 50%;
+    margin-left: 20px;
+    border-top-color: transparent;
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes loader{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(-360deg); }
+}
+/*------------------- (*) loader end ------------------*/
+/*------------------- (*) back to top start ----------------*/
+#back_btn{
+/*---/---/---/---/----*** style - code - s ***----/---/---/---/---*/
+   background: var(--button_and_text);
+   color: var(--Text_and_Background_Color);
+   border: none;
+   font-size: 20px;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+/*---/---/---/---/----*** I - code - s ***----/---/---/---/---*/
+   position: fixed;
+   right: 50px;
+   bottom: 45px;
+   display: none;
+   z-index: 999999999999999999999999999999999999;
+}
+/*------------------- (*) back to top end ------------------*/
